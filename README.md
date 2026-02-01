@@ -5,26 +5,42 @@ A minimal, practical project template for small Python projects and experiments.
 ## Requirements
 
 - Python 3.8+
-- pip
-
-## Installation
-
-1. Clone the repository:
-   git clone <repo-url>
-2. Install dependencies (if any):
-   pip install -r requirements.txt
+- [uv](https://github.com/astral-sh/uv)
 
 ## Usage
 
-- Run the main script or module:
-  python -m your_package
+### Using this Template
 
-Replace `your_package` with the actual package or script name.
+1.  **Fork or Copy**: Fork this repository or copy the files to a new directory.
+2.  **Rename Directory**: Rename the directory to your desired project name.
+3.  **Initialize Project**: Run the following command to initialize the project with `uv`, which will generate a `pyproject.toml` based on your directory name:
+    ```bash
+    uv init --lib --build-backend hatchling .
+    ```
+    *Note: If you want to specify a project name different from the directory name, you can pass the `--name` argument (if supported by your uv version) or simply rename the directory first.*
+
+### Installation
+
+1.  **Install dependencies**:
+    ```bash
+    uv sync
+    ```
+
+### Running
+
+- Run the main script or module:
+  ```bash
+  uv run -m your_package
+  ```
+
+  Replace `your_package` with the actual package or script name.
 
 ## Testing
 
-- Add tests under a `tests/` directory and run with your preferred test runner (pytest recommended):
-  pytest
+- Run tests using `pytest`:
+  ```bash
+  uv run pytest
+  ```
 
 ## Contributing
 
