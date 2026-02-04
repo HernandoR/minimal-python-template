@@ -2,16 +2,8 @@
 
 ## Using Project Exceptions
 
-- **Location**: Custom exceptions are defined in `src/framecloud/exceptions.py`
+- **Location**: Custom exceptions are defined in `src/{project_name}/exceptions.py`
 - **Usage**: Import and use project-specific exceptions instead of built-in exceptions
-- **Example**:
-
-  ```python
-  from framecloud.exceptions import InvalidPointCloudError
-
-  if not is_valid(data):
-      raise InvalidPointCloudError("Invalid point cloud format")
-  ```
 
 ## Logging
 
