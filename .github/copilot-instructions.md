@@ -2,6 +2,11 @@
 
 This project uses a modern, high-performance Python toolchain. Please adhere to the following guidelines and tool usages when generating code or commands.
 
+## instructions
+
+- **Location**: The files located in the `.github/` directory provide specific instructions for various aspects of development. Always check for relevant instruction files before generating code or commands.
+- please refer to .github/super_powers.md for extensive skills and protocols related to the Superpowers system, which may be relevant for certain tasks.
+
 ## Toolchain & Workflow
 
 ### Dependency & Project Management: `uv`
