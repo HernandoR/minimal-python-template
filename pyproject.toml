@@ -1,0 +1,18 @@
+[project]
+name = "ml-maze"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "HernandoR", email = "lzhen.dev@outlook.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pydantic>=2.12.5",
+    "pytest>=8.4.2",
+    "torch>=2.8.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.11,<0.10.0"]
+build-backend = "uv_build"
